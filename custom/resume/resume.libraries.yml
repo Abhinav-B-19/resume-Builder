@@ -1,0 +1,9 @@
+resume-style:
+  css:
+    theme:
+      css/resume_builder.css: {}
+  js:
+    js/resume-form.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupal

@@ -1,0 +1,79 @@
+{{ attach_library('generate/generate-style') }}
+
+<div class="resume">
+  <h2>Personal Details</h2>
+  <div class="section-content">
+    <ul>
+      <li><strong>Name:</strong> {{ details.name }}</li>
+      <li><strong>Email:</strong> {{ details.email }}</li>
+      <li><strong>Phone:</strong> {{ details.phone }}</li>
+      <li><strong>Address:</strong> {{ details.address }}</li>
+    </ul>
+  </div>
+  <div class="section-divider"></div>
+
+  <h2>Education Qualifications</h2>
+  <div class="section-content">
+    <table class="education-table">
+      <tr>
+        <th>Level</th>
+        <th>Year</th>
+        <th>Name</th>
+        <th>Marks</th>
+      </tr>
+      {% if details.high_school_name != '' %}
+      <tr>
+        <td>High School</td>
+        <td>{{ details.high_school_year }}</td>
+        <td>{{ details.high_school_name }}</td>
+        <td>{{ details.high_school_marks }}</td>
+      </tr>
+      {% endif %}
+      {% if details.higher_secondary_name != '' %}
+      <tr>
+        <td>Higher Secondary</td>
+        <td>{{ details.higher_secondary_year }}</td>
+        <td>{{ details.higher_secondary_name }}</td>
+        <td>{{ details.higher_secondary_marks }}</td>
+      </tr>
+      {% endif %}
+      {% if details.graduation_name != '' %}
+      <tr>
+        <td>Graduation</td>
+        <td>{{ details.graduation_year }}</td>
+        <td>{{ details.graduation_name }}</td>
+        <td>{{ details.graduation_marks }}</td>
+      </tr>
+      {% endif %}
+      {% if details.post_graduation_name != '' %}
+      <tr>
+        <td>Post Graduation</td>
+        <td>{{ details.post_graduation_year }}</td>
+        <td>{{ details.post_graduation_name }}</td>
+        <td>{{ details.post_graduation_marks }}</td>
+      </tr>
+      {% endif %}
+    </table>
+  </div>
+  <div class="section-divider"></div>
+
+  <h2>Employment</h2>
+  <div class="section-content">
+    <ul>
+      {% if details.employment_company != '' %}
+      <li>
+        <span class="section-title">{{ details.employment_company }} ({{ details.employment_year }})</span>
+        <div>{{ details.employment_description }}</div>
+      </li>
+      {% endif %}
+    </ul>
+  </div>
+  <div class="section-divider"></div>
+
+  <h2>Skills</h2>
+  <div class="section-content">
+    <ul>
+      <li>{{ details.skills }}</li>
+    </ul>
+  </div>
+</div>

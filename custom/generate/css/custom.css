@@ -1,0 +1,73 @@
+.resume {
+  font-family: Arial, sans-serif;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  color: #333;
+  line-height: 1.5;
+}
+
+.resume h2 {
+  margin-top: 30px;
+  color: #555;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.resume ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 10px 0;
+}
+
+.resume li {
+  margin-bottom: 10px;
+}
+
+.resume li:last-child {
+  margin-bottom: 0;
+}
+
+.resume strong {
+  font-weight: bold;
+}
+
+.resume .section-divider {
+  border-bottom: 1px solid #ccc;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.resume .section-divider:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+}
+
+.resume .section-content {
+  margin-bottom: 20px;
+}
+
+.resume .section-title {
+  font-size: 16px;
+  font-weight: bold;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.education-table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.education-table th, .education-table td {
+  padding: 8px;
+  text-align: center;
+  border: 1px solid black;
+}
+
+.education-table th {
+  background-color: #f2f2f2;
+}

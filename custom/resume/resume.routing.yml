@@ -1,0 +1,15 @@
+resume.resumebuilder:
+  path: '/resume'
+  defaults:
+    _controller: 'Drupal\resume\Controller\ResumeBuilderController::resumeBuilder'
+    _title: 'Resume Builder'
+  requirements:
+    _permission: 'access content'
+
+# my_module.attendance_tracker_form:
+#   path: '/resume-creater-form'
+#   defaults:
+#     _form: '\Drupal\resume_creater\Form\AttendanceTrackerForm'
+#     _title: 'Attendance Tracker'
+#   requirements:
+#     _permission: 'access content'  # Replace with the appropriate permission

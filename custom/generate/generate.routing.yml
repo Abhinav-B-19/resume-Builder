@@ -1,0 +1,7 @@
+generate.generate_resume:
+  path: '/generate/{parameter}'
+  defaults:
+    _controller: '\Drupal\generate\Controller\generateController::generate'
+    _title: 'Generate Resume'
+  requirements:
+    _permission: 'access content'

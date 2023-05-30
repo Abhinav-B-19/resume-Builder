@@ -1,0 +1,14 @@
+<?php
+
+function generate_theme($existing, $type, $theme, $path){
+    return [
+        'generate' => [
+            'variables' => [
+                'title' => '',
+                'details' => '',
+            ]
+        ]
+    ];
+}
+
+?>
