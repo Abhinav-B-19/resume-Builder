@@ -1,4 +1,10 @@
 generate-style:
-  css: 
-    theme: 
+  css:
+    theme:
       css/custom.css: {}
+
+fontawesome:
+  version: 5.15.3
+  css:
+    theme:
+      //cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css: {}
