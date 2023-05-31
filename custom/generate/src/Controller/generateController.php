@@ -16,11 +16,11 @@ class generateController extends ControllerBase {
       die("Connection failed: " . mysqli_connect_error());
     }
 
-    $sql = "SELECT * FROM `res_data` WHERE resId = $id";
+    $sql = "SELECT * FROM `resume_data` WHERE id = $id";
     $result = mysqli_query($connection, $sql);
 
     $data = mysqli_fetch_assoc($result);
-    $title = $data['name']."'s Resume";
+    $title = "Resume of ".$data['name'];
 
     mysqli_close($connection);
 
